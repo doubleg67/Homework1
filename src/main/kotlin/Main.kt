@@ -56,7 +56,7 @@ class Fraction(private var numerator: Int, private var denominator: Int){
         val b : Int = denominator*frc.denominator
         val saboloo1 = Fraction(a, b)
         return saboloo1.shekveca()
-    //return  "$a / $b"
+   
     }
 
     fun damateba(frc:Fraction):String{
