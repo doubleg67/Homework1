@@ -3,7 +3,7 @@ import kotlin.math.sqrt
 
 fun main() {
 
-    val fra = Fraction(4, 3)
+    val fra = Fraction(3, 9)
     val fra2 = Fraction(2, 8)
     val coords = Point(2.0, 3.0)
 
@@ -54,7 +54,9 @@ class Fraction(private var numerator: Int, private var denominator: Int){
     fun gamravleba(frc:Fraction):String{
         val a : Int = numerator*frc.numerator
         val b : Int = denominator*frc.denominator
-        return  "$a / $b"
+        val saboloo1 = Fraction(a, b)
+        return saboloo1.shekveca()
+    //return  "$a / $b"
     }
 
     fun damateba(frc:Fraction):String{
@@ -72,7 +74,7 @@ class Fraction(private var numerator: Int, private var denominator: Int){
         }
 
         val shekreba :Int = a1+a2
-        val saboloo = Fraction(shekreba, b2)
-        return saboloo.shekveca()
+        val saboloo2 = Fraction(shekreba, b2)
+        return saboloo2.shekveca()
     }
 }
